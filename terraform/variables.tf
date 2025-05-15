@@ -30,7 +30,7 @@ variable "key_name" {
 
 variable "public_key" {
  description = "Your SSH public key"
- default     = "<your public key>" # Add your public key here
+ default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG5oIPLoNam2Ur9lRLRZuWg7l0cVdsAIeqOhqIiR/FPc amarachiiheanacho@Amarachis-MacBook-Pro.local"
 }
 
 
