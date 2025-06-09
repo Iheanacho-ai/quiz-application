@@ -113,7 +113,7 @@ jobs:
         working-directory: ./frontend
     steps:
       - name: Checkout frontend code
-      - uses: actions/checkout@master
+        uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         continue-on-error: true # To make sure that SARIF upload gets called
@@ -142,7 +142,7 @@ jobs:
         working-directory: ./backend
     steps:
       - name: Checkout backend code
-      - uses: actions/checkout@master
+        uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         continue-on-error: true # To make sure that SARIF upload gets called
@@ -229,7 +229,7 @@ jobs:
       id-token: write
     steps:
       - name: Checkout backend code
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
